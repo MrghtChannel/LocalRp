@@ -36,9 +36,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     const servers = [
-        { id: 'server1', ip: 'start.unrealrp.com.ua:22005' },
-        { id: 'server2', ip: 'english.gtahub.gg:22005' },
-        { id: 'server3', ip: 'nami.swat-gw.de:22005' }
+        { id: 'server1', ip: 'de.gta5grand.com:22005' },
+        { id: 'server2', ip: 'pt.gta5grand.com:22005' },
+        { id: 'server3', ip: 'it.gta5grand.com:22005' }
     ];
 
     let totalPlayers = 0; 
