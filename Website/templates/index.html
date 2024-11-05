@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalRP | Сервер GTA 5 RP</title>
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="unique-body">
+        <div class="unique-container">
+            <div class="online-count-unique">
+                Загальний онлайн<br>
+                <span class="count">0</span>
+            </div>
+    
+            <div class="server-list-unique">
+                <div id="server1-status" class="server-unique">Сервер 1: <span id="server1-online-count">0</span></div>
+                <div id="server2-status" class="server-unique">Сервер 2: <span id="server2-online-count">0</span></div>
+                <div id="server3-status" class="server-unique">Сервер 3: <span id="server3-online-count">0</span></div>
+            </div>
+        </div>
+        <div class="header-unique">
+            <a href="https://forum.localrp.ua">Форум</a>
+            <a href="/donate">Донат</a>
+            <a href="#faq">FAQ</a>
+        </div>
+    <div class="news-container">
+        <h2>Останні новини</h2>
+        <div id="news-list">
+        </div>
+        <button onclick="window.location.href='https://discord.com';" class="all-news-btn">Всі новини</button>
+    </div>
+</div>    
+    <div class="container">
+        <div class="text-overlay top-images">
+            <span class="text-outline">ГАЛЕРЕЯ</span>
+            <span class="text-fill">ГАЛЕРЕЯ</span>
+        </div>
+    </div>
+
+    <div class="image-container top-images">
+        <img src="img/175jrYB.png" class="image-item" alt="Image 1">
+        <img src="img/175jrYB.png" class="image-item" alt="Image 2">
+        <img src="img/175jrYB.png" class="image-item" alt="Image 3">
+    </div>
+    
+    <div class="image-container top-images">
+        <img src="img/175jrYB.png" class="image-item" alt="Image 4">
+        <img src="img/175jrYB.png" class="image-item" alt="Image 5">
+        <img src="img/175jrYB.png" class="image-item" alt="Image 6">
+    </div>
+    
+    <div class="container">
+        <div class="text-overlay">
+            <span class="text-outline">ПРИЄДНУЙТЕСЬ ДО НАС</span>
+            <span class="text-fill">ПРИЄДНУЙТЕСЬ ДО НАС</span>
+        </div>
+        <div class="sub-text">Наша аудиторія чекає на вас</div>
+    </div>
+    <div class="container">
+    <div class="wrapper">
+        <div class="card discord">
+            <img src="img/discordIcon.svg" alt="Discord">
+            <h3>НАШ ДИСКОРД-КАНАЛ</h3>
+            <p>Офіційний Discord-канал для спілкування гравців, новин та бонусів</p>
+            <a href="https://discord.com/" class="button">ПРИЄДНАТИСЯ</a>
+        </div>
+        <div class="card youtube">
+            <img src="img/youtubeIcon.svg" alt="YouTube">
+            <h3>НАШ YOUTUBE-КАНАЛ</h3>
+            <p>Офіційний YouTube-канал для перегляду оновлень і отримання гарного настрою.</p>
+            <a href="https://www.youtube.com/" class="button">ПРИЄДНАТИСЯ</a>
+        </div>
+        <div class="card tiktok">
+            <img src="img/tiktokIcon.svg" alt="TikTok">
+            <h3>НАШ TIKTOK</h3>
+            <p>Офіційний TikTok-канал для отримання гарного настрою</p>
+            <a href="https://www.tiktok.com/" class="button">ПРИЄДНАТИСЯ</a>
+        </div>
+        <div class="card instagram">
+            <img src="img/instaIcon.svg" alt="Instagram">
+            <h3>НАШ INSTAGRAM</h3>
+            <p>Офіційний Instagram-акаунт для отримання гарного настрою</p>
+            <a href="https://www.instagram.com/" class="button">ПРИЄДНАТИСЯ</a>
+        </div>
+    </div>
+
+    <div class="container play-section" id="start">
+        <div class="text-overlay play-section">
+            <span class="text-outline">Як почати грати</span>
+            <span class="text-fill">Як почати грати</span>
+        </div>
+    </div>
+    <div class="image-container play-section">
+        <img src="img/bg1.png" alt="Play" class="background-image">
+        <div class="button-container">
+            <a href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/" target="_blank">
+                <button onclick="Steam()">Купити</button>
+            </a> 
+            <a href="http://localhost:3000/uploads/LocalRp Setup 1.0.0.exe" target="_blank">   
+            <button onclick="download()">Завантажити</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="container" id="faq">
+        <header>
+            <div class="text-overlay">
+                <span class="text-outline">ВІДПОВІДІ НА ПИТАННЯ</span>
+                <span class="text-fill">ВІДПОВІДІ НА ПИТАННЯ</span>
+            </div>
+        </header>
+        <section class="faq">
+            <div class="faq-item">
+                <h2>Що таке Local RP?</h2>
+                <p>Це унікальний проект на базі GTA V, що дозволяє тисячам гравців взаємодіяти один з одним у реальному часі.</p>
+            </div>
+            <div class="faq-item">
+                <h2>Що таке Role Play?</h2>
+                <p>Це ігровий режим, де учасники створюють персонажів та сценарії, а потім діють відповідно до своїх ролей у рамках ігрових процесів.</p>
+            </div>
+            <div class="faq-item">
+                <h2>Як розпочати грати на Local RP?</h2>
+                <p>Для початку необхідно завантажити ліцензійну GTA V та встановити LocalRp Launcher.</p>
+            </div>
+            <div class="faq-item">
+                <h2>Що таке LocalRp Launcher?</h2>
+                <p>Це програма для підключення до серверів. Лаунчер безпечний, вміє виправляти помилки гри та завантажувати необхідні файли.</p>
+            </div>
+            <div class="faq-item">
+                <h2>Чим зайнятися на сервері?</h2>
+                <p>Крім великого вибору професій та взаємодії з гравцями, у нас доступні регулярні оновлення та сезонні івенти.</p>
+            </div>
+            <div class="faq-item">
+                <h2>Де знайти правила серверів?</h2>
+                <p>Розділ із правилами серверів, скаргами на гравців та іншими темами можна знайти на <a href="#">форумі проекту</a>.</p>
+            </div>
+        </section>
+    <footer>
+        <div class="footer-left">
+            <img src="img/logo.png" alt="LocalRP">
+        </div>
+        <div class="footer-middle">
+            <div class="footer-column">
+                <h3>ГРАВЦЯМ</h3>
+                <ul>
+                    <li><a href="#start">Розпочати гру</a></li>
+                    <li><a href="/donate">Поповнення рахунку</a></li>
+                    <li><a href="forum.localrp.ua">Форум</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>ВАЖЛИВА ІНФОРМАЦІЯ</h3>
+                <ul>
+                    <li><a href="../Policy/user-agreement.pdf">Умови використання</a></li>
+                    <li><a href="../Policy/privacy-policy.pdf">Угода користувача</a></li>
+                    <li><a href="../Policy/payments.pdf">Умови договору-оферти</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>КОНТАКТИ</h3>
+                <ul>
+                    <li><a href="https://disocrd.com">Канал підтримки в Discord</a></li>
+                    <li><a href="mailto:support@LocalRp.net">support@LocalRp.net</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-right">
+            <ul class="payment-methods">
+                <li><img src="./img/visa.svg" alt="Visa"></li>
+                <li><img src="./img/mastercard.svg" alt="Mastercard"></li>
+                <li><img src="./img/GooglePay.svg" alt="GooglePay"></li>
+                <li><img src="./img/ApplePay.svg" alt="ApplePay"></li>
+            </ul>
+        </div>
+    </footer>
+    <a>LocalRp is not affiliated with or endorsed by Take-Two, Rockstar North Interactive, or any other rights holder. All the used trademarks belong to their respective owners.</a>
+    </div>
+</body>
+
+</html>

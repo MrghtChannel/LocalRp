@@ -1,0 +1,44 @@
+{
+  "name": "lc-client",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "MrghtChannel",
+  "license": "Apache-2.0",
+  "description": "A client application for LC",
+  "dependencies": {
+    "auto-launch": "^5.0.6",
+    "axios": "^1.7.7",
+    "discord-rpc": "^4.0.1",
+    "electron-store": "^10.0.0"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.yourapp.id",
+    "productName": "LocalRp",
+    "files": [
+      "**/*"
+    ],
+    "win": {
+      "icon": "logo.png",
+      "target": "nsis"
+    },
+    "nsis": {
+      "license": "license.md"
+    },
+    "mac": {
+      "icon": "logo.png"
+    },
+    "linux": {
+      "icon": "logo.png"
+    }
+  }
+}

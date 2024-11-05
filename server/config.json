@@ -1,0 +1,39 @@
+{
+    "news": [
+        {
+            "id": 1,
+            "title": "Перша новина",
+            "description": "Це опис першої новини.",
+            "image": "/uploads/news1.jpg",
+            "date": "2024-11-01"
+        },
+        {
+            "id": 2,
+            "title": "Друга новина",
+            "description": "Це опис другої новини.",
+            "image": "/uploads/news1.jpg",
+            "date": "2024-11-01"
+        },
+        {
+            "id": 3,
+            "title": "Третя новина",
+            "description": "Це опис третьої новини.",
+            "image": "/uploads/news1.jpg",
+            "date": "2024-11-01"
+        },
+        {
+            "id": 4,
+            "title": "Четверта новина",
+            "description": "Це опис четвертої новини.",
+            "image": null,
+            "date": "2024-11-01"
+        },
+        {
+            "id": 5,
+            "title": "П'ята новина",
+            "description": "Це опис п'ятої новини.",
+            "image": null,
+            "date": "2024-11-01"
+        }
+    ]
+}

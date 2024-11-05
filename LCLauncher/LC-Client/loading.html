@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #151520;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .loader {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #3498db;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #aaa;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="loader" id="loader"></div>
+    <div class="message" id="message">Завантаження, будь ласка, зачекайте...</div>
+
+    <script>
+        const messages = [
+            "Завантаження, будь ласка, зачекайте...",
+            "Перевірка наявності оновлень...",
+            "Завантаження даних, не вимикайте...",
+            "Перевірка підключення до сервера...",
+            "Перевірка інтернет-з'єднання...",
+            "Майже готово, трохи терпіння..."
+        ];
+
+        let currentIndex = 0;
+        const messageElement = document.getElementById('message');
+        const loaderElement = document.getElementById('loader');
+
+        function updateMessage() {
+            if (!navigator.onLine) {
+                messageElement.innerText = "Помилка: немає з'єднання з інтернетом!";
+                loaderElement.style.display = 'none'; 
+            } else {
+                loaderElement.style.display = 'block'; 
+                messageElement.innerText = messages[currentIndex];
+                currentIndex = (currentIndex + 1) % messages.length;
+            }
+        }
+
+        setInterval(updateMessage, 1000);
+        
+        updateMessage();
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "servers": [
+    {
+      "id": 1,
+      "name": "Server 1",
+      "ip_address": "y7g9oj",
+      "description": "Основний сервер"
+    },
+    {
+      "id": 2,
+      "name": "Server 2",
+      "ip_address": "5p4q9d",
+      "description": "Запасний сервер"
+    },
+    {
+      "id": 2,
+      "name": "Server 3",
+      "ip_address": "5p4q9d",
+      "description": "Запасний сервер"
+    }
+  ]
+  
+}
